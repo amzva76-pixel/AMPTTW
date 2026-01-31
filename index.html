@@ -1,0 +1,69 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Elite Property Group</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+
+    <div id="landing-page">
+        <div class="landing-content">
+            <h1>Elite Property Group</h1>
+            <p>Find the keys to your future today.</p>
+            <button class="start-btn" onclick="enterSite()">View Properties</button>
+        </div>
+    </div>
+
+    <div id="main-site" style="display: none;">
+        <nav>
+            <div class="logo">Elite Homes</div>
+            <div class="nav-links">
+                <button onclick="showSection('home')">Home</button>
+                <button onclick="showSection('houses')">Houses for Sale</button>
+                <button onclick="showSection('about')">About Us</button>
+            </div>
+        </nav>
+
+        <section id="home" class="content-section">
+            <div class="hero-box">
+                <h1>Welcome to Your New Home</h1>
+                <p>Experience luxury in every corner. Our premium listings are waiting for you.</p>
+            </div>
+        </section>
+
+        <section id="houses" class="content-section" style="display:none;">
+            <h2>Houses for Sale</h2>
+            <div class="house-grid">
+                <div class="card">
+                    <img src="House.Jpg1.jpg" alt="House 1">
+                    <h3>Sunset Villa</h3>
+                    <p>$540,000</p>
+                </div>
+                <div class="card">
+                    <img src="House.Jpg2.png" alt="House 2">
+                    <h3>Modern Cottage</h3>
+                    <p>$320,000</p>
+                </div>
+                <div class="card">
+                    <img src="House.Jpg3.png" alt="House 3">
+                    <h3>Lavender Estate</h3>
+                    <p>$610,000</p>
+                </div>
+            </div>
+        </section>
+
+        <section id="about" class="content-section" style="display:none;">
+            <h2>About Us</h2>
+            <p>We are a dedicated team of real estate experts with over 15 years of experience in matching people with
+                their dream homes.</p>
+        </section>
+    </div>
+
+    <script src="script.js"></script>
+</body>
+
+</html>
